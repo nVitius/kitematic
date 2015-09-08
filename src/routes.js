@@ -12,6 +12,7 @@ import ContainerSettingsGeneral from './components/ContainerSettingsGeneral.reac
 import ContainerSettingsPorts from './components/ContainerSettingsPorts.react';
 import ContainerSettingsVolumes from './components/ContainerSettingsVolumes.react';
 import ContainerSettingsAdvanced from './components/ContainerSettingsAdvanced.react';
+import ContainerSettingsLinks from './components/ContainerSettingsLinks.react';
 import Preferences from './components/Preferences.react';
 import About from './components/About.react';
 import NewContainerSearch from './components/NewContainerSearch.react';
@@ -44,6 +45,7 @@ var routes = (
           <Route name="containerSettingsGeneral" path="containers/details/:name/settings/general" handler={ContainerSettingsGeneral}/>
           <Route name="containerSettingsPorts" path="containers/details/:name/settings/ports" handler={ContainerSettingsPorts}/>
           <Route name="containerSettingsVolumes" path="containers/details/:name/settings/volumes" handler={ContainerSettingsVolumes}/>
+          <Route name="containerSettingsLinks" path="containers/details/:name/settings/links" handler={ContainerSettingsLinks}/>
           <Route name="containerSettingsAdvanced" path="containers/details/:name/settings/advanced" handler={ContainerSettingsAdvanced}/>
         </Route>
       </Route>
